@@ -16,11 +16,9 @@ namespace SalienCheat
         static void Main(string[] args)
         {
             StartUpMessage();
+
             bool BestPlanetAndZone;
-            do
-            {
-                BestPlanetAndZone = GetBestPlanetAndZone();
-            } while(!BestPlanetAndZone);
+            
 
 
 
@@ -29,47 +27,8 @@ namespace SalienCheat
 #endif
         }
 
-        static void CurrentTimeWrite()
-        {
-            ConsoleColor tmpFColor = Console.ForegroundColor;
-            ConsoleColor tmpBColor = Console.BackgroundColor;
-            Console.BackgroundColor = ConsoleColor.Black;
-            Console.ForegroundColor = ConsoleColor.Gray;
-            Console.Write("[{0:T}] ", DateTime.Now);
-            Console.ForegroundColor = tmpFColor;
-            Console.BackgroundColor = tmpBColor;
-        }
 
-        static void StartUpMessage()
-        {
-            Console.WriteLine("Please get a token from here: https://steamcommunity.com/saliengame/gettoken and enter it:");
-            Token = Console.ReadLine();
-            Console.Clear();
-            Console.WriteLine("The script can be terminated at any time by pressing Ctrl-C");
 
-            Console.BackgroundColor = ConsoleColor.Blue;
-            Console.ForegroundColor = ConsoleColor.Gray;
-            CurrentTimeWrite();
-            Console.WriteLine("Welcome to SalienCheat for SteamDB");
-            Console.BackgroundColor = ConsoleColor.Black;
-            Console.ForegroundColor = ConsoleColor.DarkGreen;
-            CurrentTimeWrite();
-            Console.WriteLine("-- If you want to support us, join our group");
-            CurrentTimeWrite();
-            Console.Write("--");
-            Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.WriteLine(" https://steamcommunity.com/groups/steamdb");
-            Console.ForegroundColor = ConsoleColor.DarkGreen;
-            CurrentTimeWrite();
-            Console.WriteLine("-- and set us as your clan on");
-            CurrentTimeWrite();
-            Console.Write("--");
-            Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.WriteLine(" https://steamcommunity.com/saliengame/play");
-            Console.ForegroundColor = ConsoleColor.DarkGreen;
-            CurrentTimeWrite();
-            Console.WriteLine("-- Happy farming!");
-        }
 
         static bool GetBestPlanetAndZone()
         {
@@ -100,6 +59,55 @@ namespace SalienCheat
         static void ExecuteRequest(string method, string url, string data)
         {
 
+        }
+
+
+        static void StartUpMessage()
+        {
+            Console.WriteLine("Please get a token from here: https://steamcommunity.com/saliengame/gettoken and enter it:");
+            Token = Console.ReadLine();
+            Console.Clear();
+            Console.WriteLine("The script can be terminated at any time by pressing Ctrl-C");
+
+            Console.BackgroundColor = ConsoleColor.Blue;
+            Console.ForegroundColor = ConsoleColor.Gray;
+            Console.WriteLine("Welcome to SalienCheat for SteamDB");
+            Console.BackgroundColor = ConsoleColor.Black;
+
+            PrintWithColor("|]g-- If you want to support us, join our group");
+            PrintWithColor("|]g--|]y https://steamcommunity.com/groups/steamdb");
+            PrintWithColor("|]g-- and set us as your clan on");
+            PrintWithColor("|]g--|]y https://steamcommunity.com/saliengame/play");
+            PrintWithColor("|]g-- Happy farming!");
+        }
+        static void PrintWithColor(string message)
+        {
+            // ]n == normal/gray
+            // ]g == darkGreen
+            // ]y == yellow
+            // ]r == red
+
+            string[] messageParts = message.Split('|');
+
+            Console.ForegroundColor = ConsoleColor.Gray;
+            Console.Write("[{0:T}] ", DateTime.Now);
+
+            foreach(string s in messageParts)
+            {
+                if(String.IsNullOrWhiteSpace(s))
+                    continue;
+                if(s.StartsWith("]n")) 
+                    Console.ForegroundColor = ConsoleColor.Gray;
+                else if(s.StartsWith("]g")) 
+                    Console.ForegroundColor = ConsoleColor.DarkGreen;
+                else if(s.StartsWith("]y")) 
+                    Console.ForegroundColor = ConsoleColor.Yellow;
+                else if(s.StartsWith("]r"))
+                    Console.ForegroundColor = ConsoleColor.Red;
+                
+                Console.Write(s.Remove(0, 2));
+            }
+            Console.WriteLine();
         }
     }
 }
