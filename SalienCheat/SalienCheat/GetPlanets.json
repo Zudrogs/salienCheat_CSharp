@@ -1,0 +1,107 @@
+﻿{
+  "response": {
+    "planets": [
+      {
+        "id": "19",
+        "state": {
+          "name": "Hexes Planet",
+          "difficulty": 1,
+          "active": true,
+          "activation_time": 1529940458,
+          "position": 2,
+          "captured": false,
+          "capture_progress": 0.73925405740737915,
+          "current_players": 193093,
+          "priority": 19,
+          "tag_ids": "1717,9"
+        }
+      },
+      {
+        "id": "20",
+        "state": {
+          "name": "Reboots Planet I",
+          "image_filename": "Planet41.png",
+          "map_filename": "41.png",
+          "cloud_filename": "",
+          "land_filename": "41.png",
+          "difficulty": 1,
+          "giveaway_id": "2492062106107080736",
+          "active": true,
+          "activation_time": 1529968417,
+          "position": 3,
+          "captured": false,
+          "capture_progress": 0.721478879451751709,
+          "total_joins": 840825,
+          "current_players": 163835,
+          "priority": 20,
+          "tag_ids": "5708,19"
+        }
+      },
+      {
+        "id": "21",
+        "state": {
+          "name": "Almost Like A Real Job Planet",
+          "image_filename": "Planet4.png",
+          "map_filename": "4.png",
+          "cloud_filename": "",
+          "land_filename": "4.png",
+          "difficulty": 1,
+          "giveaway_id": "2492062185223739998",
+          "active": true,
+          "activation_time": 1529992131,
+          "position": 0,
+          "captured": false,
+          "capture_progress": 0.433724313974380493,
+          "total_joins": 460649,
+          "current_players": 102433,
+          "priority": 21,
+          "tag_ids": "12472,599"
+        }
+      },
+      {
+        "id": "22",
+        "state": {
+          "name": "Glory Days Planet I",
+          "image_filename": "Planet2.png",
+          "map_filename": "2.png",
+          "cloud_filename": "",
+          "land_filename": "2.png",
+          "difficulty": 1,
+          "giveaway_id": "2492062185223801703",
+          "active": true,
+          "activation_time": 1530000591,
+          "position": 4,
+          "captured": false,
+          "capture_progress": 0.380079656839370728,
+          "total_joins": 348285,
+          "current_players": 94760,
+          "priority": 22,
+          "tag_ids": "1693,19"
+        }
+      },
+      {
+        "id": "24",
+        "state": {
+          "name": "Planet of Science!",
+          "image_filename": "Planet12.png",
+          "map_filename": "12.png",
+          "cloud_filename": "",
+          "land_filename": "12.png",
+          "difficulty": 1,
+          "giveaway_id": "2492062185223680640",
+          "active": true,
+          "activation_time": 1530002871,
+          "position": 1,
+          "captured": false,
+          "capture_progress": 0.159384757280349731,
+          "total_joins": 327090,
+          "current_players": 115998,
+          "priority": 23,
+          "tag_ids": "5794,597"
+        }
+      }
+    ],
+    "game_version": 1
+  }
+}
+
