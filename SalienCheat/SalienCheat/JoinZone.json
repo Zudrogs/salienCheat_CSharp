@@ -1,0 +1,50 @@
+﻿{
+    "response": {
+        "zone_info": {
+            "zone_position": 67,
+            "leader": {
+                "accountid": 4777282,
+                "name": "SteamDB",
+                "avatar": "ecf2f471610eb2c59253359fa2b7ec944fedd076",
+                "url": "SteamDB"
+            },
+            "type": 3,
+            "gameid": "2888",
+            "difficulty": 3,
+            "captured": false,
+            "capture_progress": 0.761063337326049805,
+            "top_clans": [
+                {
+                    "accountid": 4777282,
+                    "name": "SteamDB",
+                    "avatar": "ecf2f471610eb2c59253359fa2b7ec944fedd076",
+                    "url": "SteamDB"
+                },
+                {
+                    "accountid": 33035916,
+                    "name": "/r/saliens",
+                    "avatar": "0b2bbbccda8da59f492d5dc37df9956d8c54f79e",
+                    "url": "summersaliens"
+                },
+                {
+                    "accountid": 148845,
+                    "name": "Hentai!",
+                    "avatar": "4ff6a96268bb05113b88faf1c9688301e8cfa706",
+                    "url": "hentaii"
+                },
+                {
+                    "accountid": 275018,
+                    "name": "Reddit",
+                    "avatar": "d5a5703f389be71faddc08253bc492187383b172",
+                    "url": "reddit"
+                },
+                {
+                    "accountid": 5151157,
+                    "name": "Steam Universe",
+                    "avatar": "e34e65ef2ef16093d4428c930fbcc42490522ed3",
+                    "url": "steamuniverse"
+                }
+            ]
+        }
+    }
+}

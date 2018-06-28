@@ -1,0 +1,18 @@
+﻿{
+  "response": {
+    "active_planet": "32",
+    "time_on_planet": 7713,
+    "active_zone_game": "2928",
+    "active_zone_position": "33",
+    "time_in_zone": 97,
+    "clan_info": {
+      "accountid": 33035916,
+      "name": "/r/saliens",
+      "avatar": "0b2bbbccda8da59f492d5dc37df9956d8c54f79e",
+      "url": "summersaliens"
+    },
+    "score": "6474610",
+    "level": 14,
+    "next_level_score": "7200000"
+  }
+}
